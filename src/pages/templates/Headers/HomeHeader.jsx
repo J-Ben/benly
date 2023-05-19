@@ -6,8 +6,56 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Avatar,
+} from "@material-tailwind/react";
 import Nav from "../Nav";
 import Goto from "../../../components/atoms/Goto";
+import { StarIcon } from "@heroicons/react/24/solid";
+
+import { Tilt } from 'react-tilt'
+
+import { Carousel } from 'react-carousel3';
+import react from "../../../assets/img/react-svgrepo-com.png"
+import reactjs from "../../../assets/img/reacttemplate-svgrepo-com.png"
+import css from "../../../assets/img/css-svgrepo-com.png"
+import node from "../../../assets/img/nodejs-svgrepo-com (1).png"
+import aws from "../../../assets/img/aws-svgrepo-com.png"
+import nodejs from "../../../assets/img/nodejs-svgrepo-com.png"
+import type from "../../../assets/img/typescript-svgrepo-com (1).png"
+import svelte from "../../../assets/img/svelte-svgrepo-com.png"
+
+const style = {
+  width: 297,
+  height: 296,
+};
+
+const defaultOptions = {
+  reverse: false,  // reverse the tilt direction
+  max: 35,     // max tilt rotation (degrees)
+  perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000,   // Speed of the enter/exit transition
+  transition: true,   // Set a transition on enter/exit.
+  axis: null,   // What axis should be disabled. Can be X or Y.
+  reset: true,    // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
+const defaultOptions2 = {
+  reverse: true,  // reverse the tilt direction
+  max: 35,     // max tilt rotation (degrees)
+  perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+  speed: 500,   // Speed of the enter/exit transition
+  transition: true,   // Set a transition on enter/exit.
+  axis: "Y",   // What axis should be disabled. Can be X or Y.
+  reset: true,    // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
+
 
 export default function HeaderMain() {
   const [openNav, setOpenNav] = useState(false);
@@ -79,6 +127,7 @@ export default function HeaderMain() {
 
     <div className="relative">
       <Nav />
+
       <svg className="absolute -z-10" viewBox="0 0 1727 619" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M516.338 215C303.06 215 97.9844 326.5 0 433V0H1727V396C1727 430.5 1655.41 619 1386.08 619C1116.74 619 847.161 215 516.338 215Z" fill="url(#paint0_linear_3_29)" />
         <defs>
@@ -89,8 +138,73 @@ export default function HeaderMain() {
         </defs>
       </svg>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-transparent px-12">
-        <div className="invisible sm:visible"></div>
+        <div className="invisible sm:visible sm:py-16 md:py-52">
+          <Card color="transparent" shadow={false} className="w-full max-w-[26rem]">
+            {/* <CardHeader
+                color="transparent"
+                floated={false}
+                shadow={false}
+                className="mx-0 flex items-center gap-4 pt-0 pb-8"
+              >
+                <Avatar
+                  size="lg"
+                  variant="circular"
+                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+                  alt="candice wu"
+                />
+                <div className="flex w-full flex-col gap-0.5">
+                  <div className="flex items-center justify-between">
+                    <Typography variant="h5" color="blue-gray">
+                      Candice Wu
+                    </Typography>
+                    <div className="5 flex items-center gap-0">
+                      <StarIcon className="h-5 w-5 text-yellow-700" />
+                      <StarIcon className="h-5 w-5 text-yellow-700" />
+                      <StarIcon className="h-5 w-5 text-yellow-700" />
+                      <StarIcon className="h-5 w-5 text-yellow-700" />
+                      <StarIcon className="h-5 w-5 text-yellow-700" />
+                    </div>
+                  </div>
+                  <Typography color="blue-gray">Frontend Lead @ Google</Typography>
+                </div>
+              </CardHeader> */}
+            <div
+              className="w-[200px]"
+              style={{
+
+                justifyContent: 'center',
+              }}
+            >
+              <Carousel height={460} width={680} yOrigin={42} yRadius={48} autoPlay={true}>
+                <div key={1} style={style}>
+                  <img alt="" src={react} width="125" />
+                </div>
+                <div key={2} style={style}>
+                  <img alt="" src={css} width="125" />
+                </div>
+                <div key={4} style={style}>
+                  <img alt="" src={aws} width="125" />
+                </div>
+                <div key={4} style={style}>
+                  <img alt="" src={reactjs} width="125" />
+                </div>
+                <div key={5} style={style}>
+                  <img alt="" src={type} width="125" />
+                </div>
+                <div key={5} style={style}>
+                  <img alt="" src={nodejs} width="125" />
+                </div>
+                <div key={6} style={style}>
+                  <img alt="" src={svelte} width="125" />
+                </div>
+
+              </Carousel>
+            </div>
+
+          </Card>
+        </div>
         <div className=" shake-vertical py-16 md:py-44 text-green-100 text-center sm:text-right">
+
           <Typography variant="h1" className="text-[#FFFFFF] md:text-5xl" >Ben-Jamin MK</Typography>
           <Typography variant="h5" className="text-[#F5F5F5] font-extralight mb-2 md:text-2xl	">FullStack Developper & Cloud Lover</Typography>
           <Button className="bg-[#D7FFF2] text-[#3CAC89] font-semibold	text-sm px-4 py-1.5">Download my CV</Button>
@@ -98,7 +212,7 @@ export default function HeaderMain() {
         </div>
       </div>
 
-      <Goto twAnimation="animate-bounce" />
+      {/* <Goto twAnimation="animate-bounce" /> */}
     </div>
   );
 }

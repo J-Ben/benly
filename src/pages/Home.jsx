@@ -2,14 +2,16 @@ import React from 'react';
 import HomeHeader from './templates/Headers/HomeHeader';
 import Footer from './templates/Footer';
 import Welcome from '../components/molecules/Welcome';
+import Favorites from '../components/molecules/Favorites';
 
 const Home = () => {
   return (
     <div>
       <HomeHeader />
-      <Welcome/>
+      {/* <Welcome /> */}
       {/* Your component code goes here */}
-      <Footer />
+      {/* <Favorites/> */}
+      {/* <Footer /> */}
     </div>
   );
 };
