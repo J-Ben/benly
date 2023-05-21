@@ -190,26 +190,25 @@ export default function HeaderMain() {
 
       <Goto twAnimation="animate-bounce" />
       <Dialog open={open} handler={handleOpen}>
-        <DialogHeader>Currios to know more about me? </DialogHeader>
+        <DialogHeader>Currio to know more ? </DialogHeader>
         <DialogBody divider>
-          <TypeAnimation
-            sequence={[
-              'Do not panic, I am preparing you something so amazing that you will enjoy it ', // Types 'Three' without deleting 'Two'
-              () => {
-                console.log('Sequence completed'); // Place optional callbacks anywhere in the array
-              }
-            ]}
-            wrapper="h3"
-            cursor={true}
-            repeat={Infinity}
-            className="text-[#3CAC89] text-3xl"
-          />
+          <Typography variant="h3" className="text-[#3CAC89] font-extr">
+            Do not panic, I am preparing you something so amazing that you will enjoy it.
+
+          </Typography>
 
         </DialogBody>
         <DialogFooter>
-
+          <Button
+            variant="text"
+            color="red"
+            onClick={handleOpen}
+            className="mr-1"
+          >
+            <span>Cancel</span>
+          </Button>
           <Button variant="gradient" color="green" onClick={handleOpen}>
-            <span>O Yes !</span>
+            <span>Confirm</span>
           </Button>
         </DialogFooter>
       </Dialog>
