@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <div>
       <HomeHeader />
-      {/* <Welcome /> */}
+      <Welcome/>
       {/* Your component code goes here */}
-      {/* <Favorites/> */}
-      {/* <Footer /> */}
+      <Favorites/>
+      <Footer />
     </div>
   );
 };

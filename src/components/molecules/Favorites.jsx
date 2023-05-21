@@ -11,17 +11,17 @@ import {
 
 const Favorites = () => {
     return (
-        <div className='py-32 relative w-full grid lg:items-center '>
-            <Typography className="text-[#59C6A4] flex ">
+        <div className='py-28 relative w-full flex flex-col items-center justify-center lg:items-center '>
+            <Typography className="text-[#59C6A4] flex text-7xl ">
                 My
-                <Typography variant="h3" className="text-[#59C6A4]">
+                <Typography variant="h3" className="text-[#59C6A4]  text-7xl mx-6">
                     3 favorite
                 </Typography>
                 areas
             </Typography>
             <div className='flex'>
-                <Card shadow={false} className="mt-6 w-96 ">
-                    <CardHeader shadow={false} color="blue-gray" className="relative h-56">
+                <Card shadow={false} className="mt-6 w-96 flex flex-col justify-center items-center scale-75">
+                    <CardHeader shadow={false} color="blue-gray" className="relative w-full">
                         <svg width="420" height="344" viewBox="0 0 420 344" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="420" height="344" fill="#F5F5F5" />
                             <g clip-path="url(#clip0_0_1)">
@@ -56,14 +56,14 @@ const Favorites = () => {
 
                     </CardHeader>
                     <CardBody>
-                        <Typography variant="h5" className=" text-[#59C6A4] mb-2">
-                            UI/UX Review Check
+                        <Typography variant="h3" className=" text-[#59C6A4]">
+                            WEB & MOBILE
                         </Typography>
 
                     </CardBody>
                 </Card>
-                <Card shadow={false} className="mt-6 w-96">
-                    <CardHeader shadow={false} color="blue-gray" className="relative h-56">
+                <Card shadow={false} className="mt-6 w-96 flex  flex-col justify-center items-center  scale-75">
+                    <CardHeader shadow={false} color="blue-gray" className="relative">
                         <svg width="366" height="328" viewBox="0 0 366 328" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="366" height="328" fill="#F5F5F5" />
                             <g clip-path="url(#clip0_0_1)">
@@ -86,14 +86,14 @@ const Favorites = () => {
                         </svg>
                     </CardHeader>
                     <CardBody>
-                        <Typography variant="h5" className=" text-[#59C6A4] mb-2">
-                            UI/UX Review Check
+                        <Typography variant="h3" className=" text-[#59C6A4]">
+                            CLOUD COMPUTING
                         </Typography>
 
                     </CardBody>
                 </Card>
-                <Card shadow={false} className="mt-6 w-96">
-                    <CardHeader shadow={false} color="blue-gray" className="relative h-56">
+                <Card shadow={false} className="mt-6 w-96  flex  flex-col justify-center items-center  scale-75">
+                    <CardHeader shadow={false} color="blue-gray" className="relative ">
                         <svg width="460" height="317" viewBox="0 0 460 317" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="460" height="317" fill="#F5F5F5" />
                             <g clip-path="url(#clip0_0_1)">
@@ -150,8 +150,8 @@ const Favorites = () => {
                         </svg>
                     </CardHeader>
                     <CardBody>
-                        <Typography variant="h5" className=" text-[#59C6A4] mb-2">
-                            UI/UX Review Check
+                        <Typography variant="h3" className=" text-[#59C6A4]">
+                            UI/UX DESIGN
                         </Typography>
 
                     </CardBody>
