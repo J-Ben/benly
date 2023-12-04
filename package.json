@@ -1,25 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "benly",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@heroicons/react": "^2.0.17",
-    "@material-tailwind/react": "^2.0.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-carousel3": "^1.0.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-tilt": "^1.0.2",
-    "react-type-animation": "^3.0.1",
-=======
-=======
->>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
-  "name": "benjamin",
+  "name": "ben-jamin",
   "version": "0.1.0",
   "homepage": "https://benly.vercel.app",
   "private": true,
@@ -45,10 +25,6 @@
     "reactstrap": "^8.9.0",
     "simple-react-validator": "^1.6.1",
     "slick-carousel": "^1.8.1",
-<<<<<<< HEAD
->>>>>>> 94269223b376e217fcc927f5e44386e55d029069
-=======
->>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -76,13 +52,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react-router-dom": "^6.11.1",
-=======
->>>>>>> 94269223b376e217fcc927f5e44386e55d029069
-=======
->>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
     "tailwindcss": "^3.3.2"
   }
 }
