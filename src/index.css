@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* body fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -67,3 +68,8 @@
     clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
 }
 
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 35c187726025b82c78601fe7c99a5f2955fde41c
