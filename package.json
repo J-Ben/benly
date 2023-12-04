@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "benly",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "react-tilt": "^1.0.2",
     "react-type-animation": "^3.0.1",
 =======
+=======
+>>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
   "name": "benjamin",
   "version": "0.1.0",
   "homepage": "https://benly.vercel.app",
@@ -42,7 +45,10 @@
     "reactstrap": "^8.9.0",
     "simple-react-validator": "^1.6.1",
     "slick-carousel": "^1.8.1",
+<<<<<<< HEAD
 >>>>>>> 94269223b376e217fcc927f5e44386e55d029069
+=======
+>>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -71,9 +77,12 @@
   },
   "devDependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-router-dom": "^6.11.1",
 =======
 >>>>>>> 94269223b376e217fcc927f5e44386e55d029069
+=======
+>>>>>>> 6478b91120187176bae61e5ddc21f1ef51bde156
     "tailwindcss": "^3.3.2"
   }
 }
